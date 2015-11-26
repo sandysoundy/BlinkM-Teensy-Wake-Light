@@ -1,0 +1,42 @@
+// include the library code:
+#include <LiquidCrystal.h>
+
+// initialize the library with the numbers of the interface pins
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+void setup() {
+  // set up the LCD's number of rows and columns: 
+  lcd.begin(16, 2);
+  }
+  
+  void loop() {
+  // set the cursor to column 0, line 0
+  // (note: line 1 is the second row, since counting begins with 0):
+  lcd.setCursor(0, 0);
+  // print the Time in 24hr format eg: 13:00:
+  lcd.print(13:00);
+}  
+  
+  void loop() 
+  // set the cursor to column 0, line 1
+  lcd.setCursor(0, 1);
+  // print the Date D/M/YR eg: 01/12/15
+  lcd.print(01/12/15);
+}
+
+void loop() {
+  // set the cursor to column 11, line 0
+  // (note: line 1 is the second row, since counting begins with 0):
+  lcd.setCursor(11, 0);
+  // print "Alarm"
+  lcd.print(Alarm Set );
+}  
+
+void loop() {
+  // set the cursor to column 11, line 1
+  // (note: line 1 is the second row, since counting begins with 0):
+  lcd.setCursor(0, 1);
+  // print the Alarm set time eg 08:00 or OFF:
+  lcd.print(08:00);
+}
+
